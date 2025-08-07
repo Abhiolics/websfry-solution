@@ -1,6 +1,6 @@
 # AiStarterKit
 
-Open source starter kit for building AI applications with Next.js, and Vercel AI SDK.
+Open source starter kit for building AI applications with Next.js and Vercel AI SDK.
 
 ## Getting Started
 
@@ -37,7 +37,5 @@ We are using npm as our package manager.
   - Advanced routing, SEO, and performance
   - React Server Components (RSCs) and Server Actions for server-side rendering
 - [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, and tool calls with LLMs
+  - Unified API for generating text and tool calls with LLMs
   - Supports OpenAI (default) and other model providers.
-- [Auth.js](https://authjs.dev)
-  - Simple and secure authentication

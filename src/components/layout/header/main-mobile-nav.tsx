@@ -25,7 +25,7 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
       <div className="flex flex-col justify-between">
         <div className="flex-1 overflow-y-auto">
           <div className="pt-2 pb-3 space-y-1 px-4 sm:px-6">
-            {navItems.map((item, i) => {
+            {navItems.map((item) => {
               if (item.type === 'link') {
                 return (
                   <Link
@@ -45,9 +45,9 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
 
               if (item.type === 'dropdown') {
                 return (
-                  <div key={item.items[i].href}>
+                  <div key={item.label}>
                     <button
-                      onClick={() => toggleDropdown(item.items[i].href)}
+                      onClick={() => toggleDropdown(item.label)}
                       className={cn(
                         'flex justify-between items-center w-full px-3 py-2 rounded-md text-sm font-medium' +
                           ' text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700',
@@ -62,14 +62,14 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                       <span
                         className={cn(
                           'size-4 transition-transform duration-200',
-                          activeDropdown === item.items[i].href && 'rotate-180'
+                          activeDropdown === item.label && 'rotate-180'
                         )}
                       >
                         <ChevronDownIcon />
                       </span>
                     </button>
 
-                    {activeDropdown === item.items[i].href && (
+                    {activeDropdown === item.label && (
                       <div className="mt-2 space-y-1 pl-4">
                         {item.items.map((subItem) => (
                           <Link

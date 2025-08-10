@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import type React from "react";
-import { useState } from "react";
+import type React from 'react';
+import { Fragment, useState } from 'react';
 
 import {
   CodeGeneratorIcon,
@@ -9,8 +9,9 @@ import {
   ImageGeneratorIcon,
   TextGeneratorIcon,
   VideoGeneratorIcon,
-} from "@/icons/icons";
-import Image from "next/image";
+} from '@/icons/icons';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 // Define the tab type
 interface Tab {
@@ -24,59 +25,59 @@ interface Tab {
 }
 
 export default function AIToolsTabs() {
-  const [activeTab, setActiveTab] = useState<string>("text");
+  const [activeTab, setActiveTab] = useState('text');
 
   // Tab data
   const tabs: Tab[] = [
     {
-      id: "text",
-      label: "Text Generator",
+      id: 'text',
+      label: 'Text Generator',
       icon: <TextGeneratorIcon className="w-8 h-8" />,
-      lightImage: "/images/tab-image/tab-image-1.jpg",
-      darkImage: "/images/tab-image/tab-image-1-dark.jpg",
-      title: "Easiest way to generate text",
+      lightImage: '/images/tab-image/tab-image-1.jpg',
+      darkImage: '/images/tab-image/tab-image-1-dark.jpg',
+      title: 'Easiest way to generate text',
       description:
-        "Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.",
+        'Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.',
     },
     {
-      id: "image",
-      label: "Image Generator",
+      id: 'image',
+      label: 'Image Generator',
       icon: <ImageGeneratorIcon className="w-8 h-8" />,
-      lightImage: "/images/tab-image/tab-image-2.jpg",
-      darkImage: "/images/tab-image/tab-image-2-dark.jpg",
-      title: "Create stunning images with AI",
+      lightImage: '/images/tab-image/tab-image-2.jpg',
+      darkImage: '/images/tab-image/tab-image-2-dark.jpg',
+      title: 'Create stunning images with AI',
       description:
-        "Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.",
+        'Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.',
     },
     {
-      id: "code",
-      label: "Code Generator",
+      id: 'code',
+      label: 'Code Generator',
       icon: <CodeGeneratorIcon className="w-8 h-8" />,
-      lightImage: "/images/tab-image/tab-image-3.jpg",
-      darkImage: "/images/tab-image/tab-image-3-dark.jpg",
-      title: "Generate code in any language",
+      lightImage: '/images/tab-image/tab-image-3.jpg',
+      darkImage: '/images/tab-image/tab-image-3-dark.jpg',
+      title: 'Generate code in any language',
       description:
-        "Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.",
+        'Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.',
     },
     {
-      id: "video",
-      label: "Video Generator",
+      id: 'video',
+      label: 'Video Generator',
       icon: <VideoGeneratorIcon className="w-8 h-8" />,
-      lightImage: "/images/tab-image/tab-image-4.jpg",
-      darkImage: "/images/tab-image/tab-image-4-dark.jpg",
-      title: "Create engaging videos with AI",
+      lightImage: '/images/tab-image/tab-image-4.jpg',
+      darkImage: '/images/tab-image/tab-image-4-dark.jpg',
+      title: 'Create engaging videos with AI',
       description:
-        "Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.",
+        'Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.',
     },
     {
-      id: "email",
-      label: "Email Generator",
+      id: 'email',
+      label: 'Email Generator',
       icon: <EmailGeneratorIcon className="w-8 h-8" />,
-      lightImage: "/images/tab-image/tab-image-5.jpg",
-      darkImage: "/images/tab-image/tab-image-5-dark.jpg",
-      title: "Write professional emails instantly",
+      lightImage: '/images/tab-image/tab-image-5.jpg',
+      darkImage: '/images/tab-image/tab-image-5-dark.jpg',
+      title: 'Write professional emails instantly',
       description:
-        "Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.",
+        'Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.',
     },
   ];
 
@@ -108,8 +109,8 @@ export default function AIToolsTabs() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center h-12 gap-2 px-4 py-3 text-sm font-medium transition-colors duration-200 rounded-full ${
                       activeTab === tab.id
-                        ? "bg-white dark:text-white/90 dark:bg-white/10 text-gray-800"
-                        : "text-gray-500 dark:text-gray-400 bg-transparent"
+                        ? 'bg-white dark:text-white/90 dark:bg-white/10 text-gray-800'
+                        : 'text-gray-500 dark:text-gray-400 bg-transparent'
                     }`}
                   >
                     {tab.icon}
@@ -123,22 +124,35 @@ export default function AIToolsTabs() {
 
             <div className="p-6 tab-img-bg overflow-hidden rounded-4xl mt-8">
               <div className="p-3 tab-img-overlay">
-                <Image
-                  src={currentTab.lightImage || "/placeholder.svg"}
-                  alt={currentTab.label}
-                  width={936}
-                  height={535}
-                  className="w-full rounded-2xl block dark:hidden"
-                  quality={90}
-                />
-                <Image
-                  src={currentTab.darkImage || "/placeholder.svg"}
-                  alt={currentTab.label}
-                  width={936}
-                  height={535}
-                  className="w-full rounded-2xl hidden dark:block"
-                  quality={90}
-                />
+                {tabs.map((tab) => (
+                  <Fragment key={tab.id}>
+                    <Image
+                      src={tab.lightImage || '/placeholder.svg'}
+                      alt={tab.label}
+                      width={936}
+                      height={535}
+                      className={cn(
+                        'w-full rounded-2xl block dark:hidden',
+                        currentTab.id !== tab.id && 'hidden!'
+                      )}
+                      quality={90}
+                      priority
+                    />
+
+                    <Image
+                      src={tab.darkImage || '/placeholder.svg'}
+                      alt={tab.label}
+                      width={936}
+                      height={535}
+                      className={cn(
+                        'w-full rounded-2xl hidden dark:block',
+                        currentTab.id !== tab.id && 'hidden!'
+                      )}
+                      quality={90}
+                      priority
+                    />
+                  </Fragment>
+                ))}
               </div>
             </div>
 

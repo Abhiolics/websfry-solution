@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import HeroLogos from "../hero-logos";
-import { Subheading } from "./subheading";
+import Image from 'next/image';
+import Link from 'next/link';
+import HeroLogos from '../hero-logos';
+import { Subheading } from './subheading';
+import { IntroVideo } from './intro-video';
 
 export default function HeroSection() {
   return (
@@ -19,33 +20,16 @@ export default function HeroSection() {
                 Unleash the Power of Artificial Intelligence to Streamline Your
                 Workflow, Boost Productivity, and Redefine Success.
               </p>
+
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
                 <Link
                   href="/text-generator"
                   className="bg-primary-500 transition h-12 inline-flex items-center justify-center hover:bg-primary-600 px-6 py-3 rounded-full text-white text-sm"
                 >
-                  Start writing for free
+                  Explore app
                 </Link>
-                <Link
-                  href="https://www.youtube.com/watch?v=_iHmNaQBtKk"
-                  className="rounded-full video-popup flex h-12 gap-3 items-center text-sm border bg-white dark:bg-white/10 dark:border-white/[0.05] dark:text-white border-gray-100 p-1.5 pr-6"
-                >
-                  <span className="size-9 rounded-full gradient-bg-two inline-flex items-center justify-center text-sm font-medium">
-                    <svg
-                      width="16"
-                      height="17"
-                      viewBox="0 0 16 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.5 3.71077L3.5 12.3482C3.5 13.5211 4.78545 14.2402 5.78489 13.6265L12.8183 9.30776C13.7717 8.7223 13.7717 7.33672 12.8183 6.75125L5.7849 2.43251C4.78545 1.81882 3.5 2.53795 3.5 3.71077Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
-                  Watch Intro Video
-                </Link>
+
+                <IntroVideo />
               </div>
             </div>
           </div>

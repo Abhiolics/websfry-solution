@@ -26,6 +26,16 @@ If you are looking for AI SaaS Starter Kit, that can save you hundreds of hours 
 - **One-click Deployment on Vercel and Others:** Deploy on Vercel, netlify and other PaaS with one-click. Simply add environment variables and hit deploy button.
 - **Lifetime Free Updates:** One-time purchase gives you ongoing updates—new features, improvements, and fixes without extra fees or monthly costs.
 
+| ✨ Features                         | 🎁 AIStarterKit Free                 | 🔥 AIStarterKit Pro                        |
+|----------------------------------|--------------------------------|--------------------------------------|
+| Next.js Pages                    | Static                         | Dynamic Boilerplate Template         |
+| Components                       | Limited                        | All According to Demo                |
+| AI Functionality                 | Demo Only                      | Included                             |
+| AI App Examples                  | 1 Example                      | All Examples (Same as Demo)          |
+| Integrations (DB, Auth, etc.)    | Not Included                   | Included                             |
+| Community Support                | Included                       | Included                             |
+| Premium Email Support            | Not Included                   | Included                             |
+| Lifetime Free Updates            | Included                       | Included
   
 ## Getting Started
 

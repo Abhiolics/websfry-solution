@@ -1,7 +1,22 @@
-# AiStarterKit
+# Free AI Starter Kit
 
-Open source starter kit for building AI applications with Next.js and Vercel AI SDK.
+This is free and open source version of **AIStarterKit.dev** - A full-stack starter template kit for building AI-driven SaaS applications, crafted using **Next.js** and **Tailwind CSS**.
 
+**AIStarterKit** includes ready-to-use core functionalities and integrations such as authentication, Stripe payment integration, database management, dashboards, and seamless AI API integration system. Allows you effortlessly build and launch AI-powered SaaS solutions for customers. Comes with examples - like generators for text, images, code, videos, and emails.
+
+If you are looking for AI SaaS Starter Kit, that can save you hundreds of hours and allow you to launch 100x faster, **AIStarterKit** is perfect choice for you
+
+## Key Features
+
+- **Next.js & Tailwind CSS:** Modern tech stack for fast, responsive, and scalable development with clean UI powered by Tailwind v4 and Next.js performance.
+- **AI Integration:** Plug-and-play access to GPT, Midjourney, and other APIs to build AI features like text, code, and image generation instantly.
+- **All Essential Integrations:** Come with all essential integrations like Stripe, NextAuth, and Drizzle ORM —skip setup and start shipping core AI SaaS features.
+- **Pre-built SaaS Pages:** Includes dashboard, auth, pricing, error, and blog pages—launch-ready and designed to save weeks of development time.
+- **Highly Customizable:** Modular code structure makes it easy to tweak layouts, replace logic, or add new features based on your product needs.
+- **One-click Deployment on Vercel and Others:** Deploy on Vercel, netlify and other PaaS with one-click. Simply add environment variables and hit deploy button.
+- **Lifetime Free Updates:** One-time purchase gives you ongoing updates—new features, improvements, and fixes without extra fees or monthly costs.
+
+  
 ## Getting Started
 
 We are using npm as our package manager.

@@ -2,7 +2,17 @@
 
 This is free and open source version of **AIStarterKit.dev** - A full-stack starter template kit for building AI-driven SaaS applications, crafted using **Next.js** and **Tailwind CSS**.
 
+![TailAdmin Dashboard Preview](./banner.png)
+
 **AIStarterKit** includes ready-to-use core functionalities and integrations such as authentication, Stripe payment integration, database management, dashboards, and seamless AI API integration system. Allows you effortlessly build and launch AI-powered SaaS solutions for customers. Comes with examples - like generators for text, images, code, videos, and emails.
+
+
+### Quick Links
+
+- [✨ Visit Website](https://aistarterkit.dev)
+- [📄 Documentation](https://aistarterkit.dev/docs)
+- [🚀 View Demo](https://demo.aistarterkit.dev)
+- [⚡ Get PRO Version](https://aistarterkit.dev/pricing)
 
 If you are looking for AI SaaS Starter Kit, that can save you hundreds of hours and allow you to launch 100x faster, **AIStarterKit** is perfect choice for you
 

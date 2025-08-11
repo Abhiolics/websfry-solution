@@ -1,4 +1,4 @@
-# Free AI Starter Kit
+# Free AI Starter Template Kit for Next.js and Tailwind CSS
 
 This is free and open source version of **AIStarterKit.dev** - A full-stack starter template kit for building AI-driven SaaS applications, crafted using **Next.js** and **Tailwind CSS**.
 

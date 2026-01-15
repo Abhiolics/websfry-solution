@@ -23,7 +23,7 @@ export default function PricingSection() {
           </h2>
           <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
             Websfry Solution offers flexible pricing plans to suit your needs. Choose
-            the plan that's right for you and unlock the full potential of our Services.
+            the plan that&apos;s right for you and unlock the full potential of our Services.
           </p>
         </div>
 

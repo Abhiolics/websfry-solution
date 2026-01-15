@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import HeroLogos from '../hero-logos';
 import { Subheading } from './subheading';
-import { IntroVideo } from './intro-video';
+
 
 export default function HeroSection() {
   return (
@@ -28,7 +27,7 @@ export default function HeroSection() {
                   Explore For Free
                 </Link>
 
-                {/* <IntroVideo /> */}
+         
               </div>
             </div>
           </div>
@@ -144,7 +143,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="hero-glow-bg pointer-events-none w-full h-167.5 absolute z-10 bottom-0"></div>
-      {/* <HeroLogos /> */}
+    
     </section>
   );
 }

@@ -1,5 +1,4 @@
 import { getCurrentYear } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -46,14 +45,6 @@ export default function Footer() {
           <div className="grid gap-y-8 gap-x-6 lg:grid-cols-12">
             <div className="lg:col-span-3 xl:col-span-4">
               <div>
-                {/* <Link href="/" className="block mb-6">
-                  <Image
-                    src="/images/logo-white.svg"
-                    alt="logo"
-                    width={128}
-                    height={32}
-                  />
-                </Link> */}
                  <div className="flex items-center">
                             <Link href="/" className="flex items-end gap-2">
                               <div className="block dark:hidden">

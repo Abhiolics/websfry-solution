@@ -10,8 +10,6 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
-      {/* <CoreFeatures /> */}
-      {/* <ToolsTab /> */}
       <BenefitsGrid />
       <TestimonialsSection />
       <PricingSection />

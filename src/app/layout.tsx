@@ -10,11 +10,11 @@ const onest = Onest({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Demo AIStarterKit OSS - Next.js AI Starter Kit Demo',
-    template: '%s | AIStarterKit OSS Demo',
+    default: 'Websfry Solution',
+    template: '%s | Websfry Solution',
   },
   description:
-    'Demo website of AIStarterKit OSS boilerplate. Built using Next.js, Tailwind CSS, Drizzle ORM, and PostgreSQL.',
+    'Websfry Solution is a web development company specializing in creating modern, responsive, and user-friendly websites and applications tailored to your business needs.',
 };
 
 export default function RootLayout({

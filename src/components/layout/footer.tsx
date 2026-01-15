@@ -46,22 +46,35 @@ export default function Footer() {
           <div className="grid gap-y-8 gap-x-6 lg:grid-cols-12">
             <div className="lg:col-span-3 xl:col-span-4">
               <div>
-                <Link href="/" className="block mb-6">
+                {/* <Link href="/" className="block mb-6">
                   <Image
                     src="/images/logo-white.svg"
                     alt="logo"
                     width={128}
                     height={32}
                   />
-                </Link>
-                <p className="block text-sm text-gray-400 mb-9">
-                  A self-hosted AI starter kit built with Next.js, Tailwind CSS,
-                  and OpenAI integrations. Perfect for developers and startups
-                  to quickly build, deploy, and scale AI-powered SaaS products.
+                </Link> */}
+                 <div className="flex items-center">
+                            <Link href="/" className="flex items-end gap-2">
+                              <div className="block dark:hidden">
+                                <span className="text-black text-xl font-semibold">
+                                 {"{ "}Websfry<em className="italic font-semibold">Solution</em>{" }"}
+                                </span>
+                              </div>
+                
+                              <div className="hidden dark:block">
+                                <span className="text-white text-xl font-semibold">
+                                  {"{ "}Websfry<em className="italic font-semibold">Solution</em>{" }"}
+                                </span>
+                              </div>
+                            </Link>
+                          </div>
+                <p className="block text-sm text-gray-400 mb-9 mt-4">
+                Websfry Solution builds secure, scalable digital products through web & app development, AI automation, cybersecurity, and growth-focused digital marketing.
                 </p>
                 <div className="flex">
                   <a
-                    href="https://www.linkedin.com/company/pimjo/posts/?feedView=all"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -92,7 +105,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://x.com/PimjoHQ"
+                    href="https://x.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -110,7 +123,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://github.com/PIMJO"
+                    href="https://github.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -170,7 +183,7 @@ export default function Footer() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.facebook.com/PimjoHQ"
+                    href="https://www.facebook.com/"
                     target="_blank"
                     className="text-gray-400 hover:text-white/80 size-10"
                   >
@@ -206,14 +219,14 @@ export default function Footer() {
               <div className="grid sm:grid-cols-3 gap-7">
                 <div>
                   <span className="block mb-6 text-sm text-gray-400">
-                    Services
+                    Pages
                   </span>
                   <nav className="flex flex-col space-y-3">
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      Status
+                      About Us
                     </Link>
                     <Link
                       href="/pricing"
@@ -228,57 +241,63 @@ export default function Footer() {
                       FAQ
                     </Link>
                     <Link
-                      href="/contact"
-                      className="text-sm font-normal text-gray-400 transition hover:text-white"
-                    >
-                      Help Docs
-                    </Link>
-                    <Link
                       href="/privacy"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
                       Privacy Policy
                     </Link>
+                    <Link
+                      href="/privacy"
+                      className="text-sm font-normal text-gray-400 transition hover:text-white"
+                    >
+                      Terms & Conditions
+                    </Link>
                   </nav>
                 </div>
                 <div>
                   <span className="block mb-6 text-sm text-gray-400">
-                    Features
+                    Services
                   </span>
                   <nav className="flex flex-col space-y-3">
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      HTML File Upload
+                      Website Development
                     </Link>
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      HTML website hosting
+                      App Development
                     </Link>
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      Free Image Hosting
+                      AI Automation 
                     </Link>
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      Upload PDF Online
+                      Cyber Security
                     </Link>
                     <Link
                       href="/"
                       className="text-sm font-normal text-gray-400 transition hover:text-white"
                     >
-                      Free Zip file hosting
+                      Digital Marketing
+                    </Link>
+                       <Link
+                      href="/"
+                      className="text-sm font-normal text-gray-400 transition hover:text-white"
+                    >
+                      UI/UX Design
                     </Link>
                   </nav>
                 </div>
-                <div>
+                {/* <div>
                   <span className="relative block mb-6 text-sm text-gray-400">
                     Account
                   </span>
@@ -308,7 +327,7 @@ export default function Footer() {
                       Support
                     </Link>
                   </nav>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="lg:col-span-3">
@@ -341,7 +360,7 @@ export default function Footer() {
         <div className="container relative z-10 px-5 mx-auto sm:px-7">
           <div className="py-5 text-center">
             <p className="text-sm text-gray-500">
-              &copy; {getCurrentYear()} AiStarterKit - All Rights Reserved.
+              &copy; {getCurrentYear()} Websfry Solution - All Rights Reserved.
             </p>
           </div>
         </div>

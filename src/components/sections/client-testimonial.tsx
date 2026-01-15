@@ -4,79 +4,80 @@ import Image from 'next/image';
 import { useState } from 'react';
 
   const testimonials = [
-    {
-      id: 1,
-      name: 'Ralph Edwards',
-      company: 'Big Kahuna Burger Ltd',
-      image: '/images/users/user-1.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 2,
-      name: 'Albert Flores',
-      company: 'Biffco Enterprises Ltd.',
-      image: '/images/users/user-2.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 3,
-      name: 'Jenny Wilson',
-      company: 'Acme Co.',
-      image: '/images/users/user-3.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 4,
-      name: 'Esther Howard',
-      company: 'Barone LLC.',
-      image: '/images/users/user-4.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 5,
-      name: 'Darlene Robertson',
-      company: 'Abstergo Ltd.',
-      image: '/images/users/user-1.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 6,
-      name: 'Devon Lane',
-      company: 'Binford Ltd.',
-      image: '/images/users/user-2.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 7,
-      name: 'Ralph Edwards',
-      company: 'Big Kahuna Burger Ltd',
-      image: '/images/users/user-1.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 8,
-      name: 'Darlene Robertson',
-      company: 'Abstergo Ltd.',
-      image: '/images/users/user-2.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-    {
-      id: 9,
-      name: 'Devon Lane',
-      company: 'Binford Ltd.',
-      image: '/images/users/user-3.png',
-      testimonial:
-        'As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already.',
-    },
-  ];
+  {
+    id: 1,
+    name: 'Abhay Pratap Singh',
+    company: 'Founder, Startup Nexus',
+    image: '/images/users/user-1.png',
+    testimonial:
+      'Websfry Solution delivered a fast, secure, and scalable website for our startup. Their attention to detail and modern tech approach really stood out.',
+  },
+  {
+    id: 2,
+    name: 'Mritunjay Pathak',
+    company: 'CTO, FinEdge Solutions',
+    image: '/images/users/user-2.png',
+    testimonial:
+      'The team at Websfry Solution helped us automate key processes using AI. Smooth execution, clear communication, and strong technical expertise.',
+  },
+  {
+    id: 3,
+    name: 'Dileep Patel',
+    company: 'Director, Patel Enterprises',
+    image: '/images/users/user-3.png',
+    testimonial:
+      'From UI/UX to backend development, Websfry Solution handled everything professionally. Our app performance improved significantly.',
+  },
+  {
+    id: 4,
+    name: 'Ankit Sharma',
+    company: 'Product Manager, TechGrow',
+    image: '/images/users/user-4.png',
+    testimonial:
+      'Websfry Solution understands business needs, not just code. Their digital marketing and web strategy helped us increase conversions.',
+  },
+  {
+    id: 5,
+    name: 'Rohit Verma',
+    company: 'Founder, Verma Digital',
+    image: '/images/users/user-1.png',
+    testimonial:
+      'Security was our biggest concern, and Websfry Solution nailed it. Their cybersecurity practices gave us confidence to scale safely.',
+  },
+  {
+    id: 6,
+    name: 'Pooja Mehta',
+    company: 'Marketing Lead, BrandCraft',
+    image: '/images/users/user-2.png',
+    testimonial:
+      'The UI/UX designs delivered by Websfry Solution were clean, modern, and user-focused. Our users love the new experience.',
+  },
+  {
+    id: 7,
+    name: 'Saurabh Mishra',
+    company: 'Operations Head, CloudNova',
+    image: '/images/users/user-3.png',
+    testimonial:
+      'Working with Websfry Solution felt like working with an in-house tech team. Reliable, fast, and always solution-oriented.',
+  },
+  {
+    id: 8,
+    name: 'Neha Singh',
+    company: 'Co-Founder, EduSpark',
+    image: '/images/users/user-2.png',
+    testimonial:
+      'Websfry Solution helped us launch our platform on time with excellent performance. Their development process is very structured.',
+  },
+  {
+    id: 9,
+    name: 'Aman Gupta',
+    company: 'CEO, GrowthStack India',
+    image: '/images/users/user-3.png',
+    testimonial:
+      'If you want a tech partner who understands growth, automation, and scalability—Websfry Solution is the right choice.',
+  },
+];
+
 
   export default function TestimonialsSection() {
     const [showAll, setShowAll] = useState(false);

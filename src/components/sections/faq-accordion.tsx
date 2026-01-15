@@ -14,38 +14,57 @@ export default function FaqAccordion() {
   const [activeItem, setActiveItem] = useState<number | null>(1);
 
   // FAQ data
-  const faqItems: FAQItem[] = [
-    {
-      id: 1,
-      question: "Do I get free updates?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus magna quis tellus euismod, eget pharetra leo mollis. Donec eget lacus non elit blandit pharetra vitae volutpat libero.",
-    },
-    {
-      id: 2,
-      question: 'What does the number of "Projects" refer to?',
-      answer:
-        'The number of "Projects" refers to the total number of separate workspaces you can create and manage within your account. Each project can have its own settings, team members, and resources.',
-    },
-    {
-      id: 3,
-      question: "Can I upgrade to a higher plan?",
-      answer:
-        "Yes, you can upgrade to a higher plan at any time. When you upgrade, you'll be charged the prorated difference for the remainder of your current billing cycle. Your new features will be available immediately after upgrading.",
-    },
-    {
-      id: 4,
-      question: 'What does "Unlimited Projects" mean?',
-      answer:
-        '"Unlimited Projects" means you can create as many projects as you need without any restrictions. This allows you to organize your work efficiently without worrying about hitting a project limit.',
-    },
-    {
-      id: 5,
-      question: "How can I add Open AI Key?",
-      answer:
-        'To add your OpenAI API key, go to your account settings and navigate to the "API Keys" section. Click on "Add New Key", paste your OpenAI API key, and save your changes. The key will be securely stored and used for all AI-powered features.',
-    },
-  ];
+ const faqItems: FAQItem[] = [
+  {
+    id: 1,
+    question: "What services does Websfry Solution provide?",
+    answer:
+      "Websfry Solution offers end-to-end digital services including web development, mobile app development, AI & automation, cybersecurity, UI/UX design, and digital marketing. We handle everything from idea to launch and scaling.",
+  },
+  {
+    id: 2,
+    question: "How much does a website or app development cost?",
+    answer:
+      "The cost depends on your project requirements, features, and complexity. We provide transparent pricing after understanding your needs, and we offer flexible packages for startups, businesses, and enterprises.",
+  },
+  {
+    id: 3,
+    question: "How long will it take to complete my project?",
+    answer:
+      "Project timelines vary based on scope and features. A basic website can take 1–2 weeks, while complex apps or platforms may take several weeks. We always share a clear timeline before starting.",
+  },
+  {
+    id: 4,
+    question: "Will I get support and maintenance after delivery?",
+    answer:
+      "Yes. We provide ongoing support, maintenance, and performance optimization after project delivery to ensure your product remains secure, updated, and scalable.",
+  },
+  {
+    id: 5,
+    question: "Can you redesign or improve my existing website or app?",
+    answer:
+      "Absolutely. We can redesign, optimize, or modernize your existing website or app to improve performance, UI/UX, security, and conversion rates.",
+  },
+  {
+    id: 6,
+    question: "Is my data and business idea secure with Websfry Solution?",
+    answer:
+      "Yes. We follow strict security practices and confidentiality standards. Your data, code, and business ideas are handled securely and can be protected with NDAs if required.",
+  },
+  {
+    id: 7,
+    question: "Do you work with startups and small businesses?",
+    answer:
+      "Yes. We work with startups, small businesses, and enterprises. Our solutions are scalable, meaning we grow with your business at every stage.",
+  },
+  {
+    id: 8,
+    question: "Do you offer AI automation and cybersecurity services?",
+    answer:
+      "Yes. We help businesses automate processes using AI and ensure systems are protected through robust cybersecurity solutions tailored to your needs.",
+  },
+];
+
 
   const toggleItem = (itemId: number) => {
     setActiveItem(activeItem === itemId ? null : itemId);

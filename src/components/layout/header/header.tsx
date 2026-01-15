@@ -22,24 +22,21 @@ export default function Header() {
         <div className="grid grid-cols-2 items-center lg:grid-cols-[1fr_auto_1fr]">
           <div className="flex items-center">
             <Link href="/" className="flex items-end gap-2">
-              <Image
-                src="/images/logo-black.svg"
-                className="block dark:hidden"
-                alt="AiStarterKit Logo"
-                width={180}
-                height={30}
-              />
+              <div className="block dark:hidden">
+                <span className="text-black text-xl font-semibold">
+                 {"{ "}Websfry<em className="italic font-semibold">Solution</em>{" }"}
+                </span>
+              </div>
 
-              <Image
-                src="/images/logo-white.svg"
-                className="hidden dark:block"
-                alt="AiStarterKit Logo"
-                width={180}
-                height={30}
-              />
+              <div className="hidden dark:block">
+                <span className="text-white text-xl font-semibold">
+                  {"{ "}Websfry<em className="italic font-semibold">Solution</em>{" }"}
+                </span>
+              </div>
+
 
               <span className="inline-block px-1.5 py-0.5 rounded-lg rounded-bl-none bg-primary-500/90 text-white text-xs font-medium mb-0.5">
-                Demo
+                Live Now
               </span>
             </Link>
           </div>
@@ -61,14 +58,14 @@ export default function Header() {
             </button>
 
             <Link
-              href="/signin"
+              href="/"
               className="text-sm hidden lg:block font-medium text-gray-700 dark:text-gray-400 hover:text-primary-500"
             >
               Sign In
             </Link>
 
             <Link
-              href="/signup"
+              href="/"
               className="lg:inline-flex items-center px-5 py-3 gradient-btn hidden text-sm text-white rounded-full button-bg h-11"
             >
               Get Started Free

@@ -11,39 +11,38 @@ export default function HeroSection() {
         <div className="wrapper">
           <div className="max-w-[800px] mx-auto">
             <div className="text-center pb-16">
-              <Subheading text="Most Powerful AI Tools at One Place" />
+              <Subheading text="Build Smarter. Scale Faster. Secure Always." />
 
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
-                Transform Ideas into Reality with Intelligent AI Tools
+                Transform Ideas into Reality with Websfry Solution
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Unleash the Power of Artificial Intelligence to Streamline Your
-                Workflow, Boost Productivity, and Redefine Success.
+                At Websfry Solution, we design, develop, and secure high-performance digital products that help businesses grow without limits. 
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
                 <Link
-                  href="/text-generator"
+                  href="/text-generar"
                   className="bg-primary-500 transition h-12 inline-flex items-center justify-center hover:bg-primary-600 px-6 py-3 rounded-full text-white text-sm"
                 >
-                  Explore app
+                  Explore For Free
                 </Link>
 
-                <IntroVideo />
+                {/* <IntroVideo /> */}
               </div>
             </div>
           </div>
           <div className="max-w-[1000px] mx-auto relative">
             <div className="p-3 sm:p-[18px] relative z-30 rounded-[32px] border border-white/30 dark:border-white/10 bg-white/20">
               <Image
-                src="/images/hero/hero-img.jpg"
+                src="/images/hero/herobanner.svg"
                 alt=""
                 className="w-full rounded-2xl block dark:hidden"
                 width={966}
                 height={552}
               />
               <Image
-                src="/images/hero/hero-img-dark.png"
+                src="/images/hero/herobanner.svg"
                 alt=""
                 className="w-full rounded-2xl hidden dark:block"
                 width={966}
@@ -145,7 +144,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="hero-glow-bg pointer-events-none w-full h-167.5 absolute z-10 bottom-0"></div>
-      <HeroLogos />
+      {/* <HeroLogos /> */}
     </section>
   );
 }

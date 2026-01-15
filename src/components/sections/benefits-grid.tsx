@@ -8,26 +8,28 @@ export default function BenefitsGrid() {
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="max-w-lg mx-auto mb-3 font-bold text-center text-white dark:text-white/90 text-3xl md:text-title-lg">
-            The key benefits of using our tools.
+            Why businesses choose Websfry Solution.
           </h2>
-          <p className="max-w-2xl mx-auto text-base dark: font-normal leading-6 text-white/50">
-            Unlock the Potential of Innovation. Discover the Advanced AI Tools
-            Transforming Your Ideas into Reality with Unmatched Precision and
-            Intelligence.
+          <p className="max-w-2xl mx-auto text-base font-normal leading-6 text-white/50">
+            We build secure, scalable, and high-performance digital solutions that help
+            startups and businesses grow faster—combining modern technology, clean
+            design, automation, and strong cybersecurity.
           </p>
         </div>
+
         <div className="max-w-[1008px] mx-auto">
           <div className="grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-6">
               <div className="relative flex flex-col justify-between bg-primary-500 rounded-[20px] p-9 md:p-13">
                 <div className="max-w-sm mb-32">
                   <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">
-                    Craft Professional-Grade Content with AI
+                    High-Performance Website Development
                   </h3>
                   <p className="text-base text-white/70">
-                    Transform your ideas into groundbreaking realities with
-                    advanced AI tools.
+                    We design and develop fast, secure, and scalable websites tailored to your
+                    business goals—built for performance, usability, and long-term growth.
                   </p>
+
                 </div>
                 <div>
                   <svg
@@ -184,12 +186,14 @@ export default function BenefitsGrid() {
                 </div>
                 <div>
                   <h3 className="font-bold max-w-xs text-white text-2xl md:text-3xl mb-4">
-                    Boost your Productivity 10X with our AI agent tools.
+                    Powerful Mobile App Development
                   </h3>
                   <p className="text-base max-w-sm text-white/70">
-                    Unlock the Potential of Innovation, Discover the Advanced AI
-                    Tools Intelligence.
+                    We build high-quality Android and iOS apps with smooth performance,
+                    intuitive UX, and scalable architecture to support your business growth.
+                    Flutter, ReactNative, Swift, Kotlin expertise.
                   </p>
+
                 </div>
               </div>
             </div>
@@ -197,17 +201,18 @@ export default function BenefitsGrid() {
               <div className="lg:px-12 p-8 bg-[#2D0B70] lg:pb-0 lg:p-12 relative rounded-[20px] h-full lg:flex lg:flex-row justify-between bg-cover flex-col gap-5">
                 <div className="max-w-sm relative z-10">
                   <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">
-                    Overcome Writers Block Today
+                    Intuitive UI/UX Design That Users Love
                   </h3>
                   <p className="text-base text-white/70 mb-8">
-                    Discover the cutting-edge AI tools that bring your ideas to
-                    life with exceptional accuracy.
+                    We craft clean, user-focused interfaces and seamless experiences that improve
+                    usability, engagement, and conversion across web and mobile platforms.
                   </p>
+
                   <Link
                     href="/email-generator"
                     className="font-medium inline-block text-sm text-white rounded-full bg-primary-500 hover:bg-primary-600 transition py-3 px-6"
                   >
-                    Try it now for Free
+                    Get Started for Free
                   </Link>
                 </div>
                 <div>
